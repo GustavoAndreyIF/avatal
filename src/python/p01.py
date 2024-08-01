@@ -1,4 +1,3 @@
-
 def mostrar_menu():
     menu = """
     ====================
@@ -13,11 +12,23 @@ def mostrar_menu():
     """
     print(menu)
 
+def repetir():
+    s = 1
+
 def opcao_invalida():
     print("Opção inválida, por favor selecione uma opção válida.")
 
 def main():
-    pass
+    while True:
+        mostrar_menu()
+        opcao = int(input())
+        if opcao == 5:
+            break
+        if opcao != 1 and opcao != 2 and opcao != 3 and opcao != 4:
+            opcao_invalida()
+
+            
+
 
 if __name__ == "__main__":
     main()
